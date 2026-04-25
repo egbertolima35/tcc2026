@@ -1,0 +1,290 @@
+comentario,emocao,sentimento,emocao_lexico
+😀,rosto sorridente,positivo,felicidade
+😃,rosto sorridente com olhos grandes,positivo,felicidade
+😄,rosto sorridente com olhos sorridentes,positivo,felicidade
+😁,rosto radiante com olhos sorridentes,positivo,felicidade
+😆,rosto sorrindo e semicerrado,positivo,felicidade
+😅,rosto sorridente com suor,positivo,felicidade
+🤣,rolando no chão de tanto rir,positivo,felicidade
+😂,rosto com lágrimas de alegria,positivo,felicidade
+🙂,rosto com um leve sorriso,positivo,felicidade
+🙃,rosto de cabeça para baixo,neutro,neutro
+🫠,rosto derretendo,neutro,neutro
+😉,rosto piscando,positivo,felicidade
+😊,rosto sorridente com olhos sorridentes,positivo,felicidade
+😇,rosto sorridente com auréola,positivo,felicidade
+🥰,rosto sorridente com corações,positivo,amor
+😍,rosto sorridente com olhos em forma de coração,positivo,amor
+🤩,deslumbrado,positivo,felicidade
+😘,rosto mandando um beijo,positivo,amor
+😗,rosto de beijo,positivo,amor
+☺,rosto sorridente,positivo,felicidade
+😚,Beijando o rosto com os olhos fechados,positivo,amor
+😙,rosto dando beijo com olhos sorridentes,positivo,amor
+🥲,rosto sorridente com lágrima,neutro,neutro
+😋,rosto saboreando a comida,positivo,felicidade
+😛,rosto com língua,positivo,felicidade
+😜,carinha piscando com a língua,positivo,felicidade
+🤪,cara maluca,positivo,alegria
+😝,rosto semicerrado com língua,positivo,felicidade
+🤑,cara de boca de dinheiro,neutro,neutro
+🤗,rosto sorridente com as mãos abertas,positivo,felicidade
+🤭,rosto com a mão sobre a boca,neutro,neutro
+🫢,rosto com olhos abertos e mão sobre a boca,neutro,surpresa
+🫣,rosto com olho espreitando,neutro,neutro
+🤫,cara de silêncio,neutro,neutro
+🤔,cara pensativa,neutro,neutro
+🫡,rosto em saudação,positivo,respeito
+🤐,rosto com zíper na boca,neutro,neutro
+🤨,rosto com sobrancelha levantada,neutro,neutro
+😐,rosto neutro,neutro,neutro
+😑,rosto inexpressivo,neutro,neutro
+😶,rosto sem boca,neutro,neutro
+🫥,rosto de linha pontilhada,neutro,neutro
+😶‍🌫️,rosto nas nuvens,positivo,tranquilidade
+😏,cara de deboche,negativo,desprezo
+😒,cara de poucos amigos,negativo,tristeza
+🙄,rosto com olhos revirando,negativo,frustração
+😬,rosto fazendo careta,negativo,desconforto
+😮‍💨,rosto exalando,neutro,neutro
+🤥,rosto deitado,neutro,neutro
+🫨,cara tremendo,negativo,medo
+🙂‍↔️,balançando a cabeça horizontalmente,neutro,neutro
+🙂‍↕️,balançando a cabeça verticalmente,neutro,neutro
+😌,rosto aliviado,positivo,alívio
+😔,rosto pensativo,neutro,neutro
+😪,cara de sono,neutro,neutro
+🤤,rosto babando,neutro,neutro
+😴,rosto adormecido,neutro,neutro
+🫩,rosto com olheiras,negativo,cansaço
+😷,rosto com máscara médica,neutro,neutro
+🤒,rosto com termômetro,neutro,neutro
+🤕,rosto com bandagem na cabeça,neutro,neutro
+🤢,rosto enjoado,negativo,nojo
+🤮,vômito no rosto,negativo,nojo
+🤧,cara de espirro,neutro,neutro
+🥵,cara quente,neutro,neutro
+🥶,cara fria,neutro,neutro
+🥴,rosto tonto,neutro,neutro
+😵,rosto com olhos riscados,negativo,desorientação
+😵‍💫,rosto com olhos em espiral,negativo,desorientação
+🤯,cabeça explodindo,negativo,frustração
+🤠,cara de chapéu de cowboy,positivo,felicidade
+🥳,cara de festa,positivo,felicidade
+🥸,rosto disfarçado,neutro,neutro
+😎,rosto sorridente com óculos de sol,positivo,confiança
+🤓,cara de nerd,neutro,neutro
+🧐,rosto com monóculo,neutro,neutro
+😕,cara confusa,negativo,confusão
+🫤,rosto com boca diagonal,neutro,neutro
+😟,cara preocupada,negativo,preocupação
+🙁,rosto ligeiramente franzido,negativo,tristeza
+☹,cara franzindo a testa,negativo,tristeza
+😮,rosto com boca aberta,neutro,surpresa
+😯,rosto silencioso,neutro,neutro
+😲,rosto surpreso,neutro,surpresa
+😳,rosto corado,positivo,vergonha
+🫪,rosto distorcido,negativo,confusão
+🥺,rosto suplicante,negativo,tristeza
+🥹,rosto contendo as lágrimas,negativo,tristeza
+😦,rosto franzido com a boca aberta,negativo,tristeza
+😧,rosto angustiado,negativo,angústia
+😨,rosto assustado,negativo,medo
+😰,rosto ansioso com suor,negativo,ansiedade
+😥,rosto triste mas aliviado,neutro,neutro
+😢,cara de choro,negativo,tristeza
+😭,rosto chorando alto,negativo,tristeza
+😱,rosto gritando de medo,negativo,medo
+😖,rosto confuso,negativo,confusão
+😣,rosto perseverante,positivo,determinação
+😞,cara de decepção,negativo,decepção
+😓,rosto cabisbaixo e suado,negativo,frustração
+😩,rosto cansado,negativo,cansaço
+😫,rosto cansado,negativo,cansaço
+🥱,rosto bocejando,neutro,neutro
+😤,rosto com vapor saindo do nariz,negativo,raiva
+😡,rosto enfurecido,negativo,raiva
+😠,cara de raiva,negativo,raiva
+🤬,rosto com símbolos na boca,negativo,raiva
+😈,rosto sorridente com chifres,negativo,malícia
+👿,rosto zangado com chifres,negativo,raiva
+💀,crânio,negativo,morte
+☠,caveira e ossos cruzados,negativo,morte
+💩,pilha de cocô,negativo,desprezo
+🤡,cara de palhaço,neutro,neutro
+👹,ogro,negativo,raiva
+👺,goblin,negativo,raiva
+👻,fantasma,neutro,neutro
+👽,estrangeiro,neutro,neutro
+👾,monstro alienígena,neutro,neutro
+🤖,robô,neutro,neutro
+😺,gato sorrindo,positivo,felicidade
+😸,gato sorridente com olhos sorridentes,positivo,felicidade
+😹,gato com lágrimas de alegria,positivo,felicidade
+😻,gato sorridente com olhos em forma de coração,positivo,amor
+😼,gato com sorriso irônico,neutro,neutro
+😽,gato beijando,positivo,amor
+🙀,gato cansado,negativo,cansaço
+😿,gato chorando,negativo,tristeza
+😾,gato emburrado,negativo,raiva
+🙈,macaco que não vê o mal,neutro,neutro
+🙉,macaco que não ouve o mal,neutro,neutro
+🙊,macaco que não fala o mal,neutro,neutro
+💌,carta de amor,positivo,amor
+💘,coração com flecha,positivo,amor
+💝,coração com fita,positivo,amor
+💖,coração brilhante,positivo,amor
+💗,coração crescente,positivo,amor
+💓,coração batendo,positivo,amor
+💞,corações giratórios,positivo,amor
+💕,dois corações,positivo,amor
+💟,decoração de coração,positivo,amor
+❣,exclamação do coração,positivo,amor
+💔,coração partido,negativo,tristeza
+❤️‍🔥,coração em chamas,positivo,paixão
+❤️‍🩹,curando o coração,positivo,esperança
+❤,coração vermelho,positivo,amor
+🩷,coração rosa,positivo,amor
+🧡,coração laranja,positivo,amor
+💛,coração amarelo,positivo,amor
+💚,coração verde,positivo,amor
+💙,coração azul,positivo,amor
+🩵,coração azul claro,positivo,amor
+💜,coração roxo,positivo,amor
+🤎,coração marrom,neutro,neutro
+🖤,coração negro,negativo,tristeza
+🩶,coração cinza,neutro,neutro
+🤍,coração branco,positivo,amor
+💋,marca de beijo,positivo,amor
+💯,cem pontos,positivo,confiança
+💢,símbolo da raiva,negativo,raiva
+🫯,nuvem de luta,negativo,raiva
+💥,colisão,negativo,raiva
+💫,tonto,neutro,neutro
+💦,gotículas de suor,neutro,neutro
+💨,fugindo apressadamente,negativo,medo
+🕳,buraco,negativo,vazio
+💬,balão de fala,neutro,neutro
+👁️‍🗨️,olho em balão de fala,neutro,neutro
+🗨,balão de fala esquerdo,neutro,neutro
+🗯,bolha de raiva direita,negativo,raiva
+💭,balão de pensamento,neutro,neutro
+💤,ZZZ,neutro,neutro
+🍷,Taça comemoração,positivo,alegria
+👍🏻,joia,positivo,confiança
+🌹,flores,positivo,amor
+📸,photo,neutro,neutro
+🙌🏾,Aplausos,positivo,felicidade
+🥂,Comemoração,positivo,felicidade
+👌🏼,Ok,positivo,confiança
+⏬,Desce,neutro,neutro
+🌞,Energia positiva dias quentes de verão e calor,positivo,felicidade
+👨‍🍳,Chef de Cozinha comida boa,positivo,felicidade
+✈,viagens férias voos transporte aéreo,positivo,felicidade
+👊🏽,Apoio Fechado,positivo,confiança
+👍,Jóia,positivo,confiança
+☀,Otimismo,positivo,felicidade
+🛬,Cheguei,positivo,felicidade
+👀,Observando,neutro,neutro
+🧘,Calma,positivo,tranquilidade
+🕺🏻,Diversão,positivo,felicidade
+🙌,Aplausos,positivo,felicidade
+🙌🏽,Aplausos,positivo,felicidade
+🤙,Aprovação,positivo,confiança
+👊,União,positivo,confiança
+🌊,avassalador,positivo,felicidade
+👱,Loira,neutro,neutro
+🏄,surfando,positivo,felicidade
+🌸,doçura e charme,positivo,amor
+🍦,Verão,positivo,felicidade
+🎉,cone de festa,positivo,felicidade
+🆒,bacana,positivo,confiança
+💎,sofisticação,positivo,confiança
+👌🏻,Ok,positivo,confiança
+🔥,impressionante,positivo,admiração
+✅,confirmação,positivo,confiança
+⭐,novidade,positivo,alegria
+💯,Excelência,positivo,confiança
+🔝,Melhor,positivo,confiança
+👏🏻,Aplausos,positivo,felicidade
+🌵,espinhosas,negativo,raiva
+😳,vergonha,negativo,vergonha
+☺,tranquilidade,positivo,tranquilidade
+🌎,meio ambiente,positivo,amor
+😘,ternura,positivo,amor
+👏🏼,Aplausos,positivo,felicidade
+🐾,pet friendly,positivo,amor
+👋🏻,Saudação,positivo,felicidade
+💜,amor pela natureza,positivo,amor
+👍🏾,Jóia,positivo,confiança
+🇲🇦,Marrocos,neutro,neutro
+❤️,amor,positivo,amor
+🌺,felicidade,positivo,felicidade
+💕,carinho,positivo,amor
+😃,empolgação,positivo,felicidade
+❤,romance,positivo,amor
+😁,satisfação,positivo,felicidade
+🌲,Natal,positivo,felicidade
+🛫,partida,neutro,neutro
+👉,algo à direita,neutro,neutro
+😢,pena,negativo,tristeza
+📷,photo,neutro,neutro
+🌴,Férias e Verão,positivo,felicidade
+🚁,helicóptero,neutro,neutro
+☁,sonho,positivo,esperança
+👍🏼,Jóia,positivo,confiança
+🙏,Pelo amor de Deus,negativo,desespero
+💔,Decepção,negativo,tristeza
+☺️,alegria,positivo,felicidade
+👌,Ok,positivo,confiança
+😙,afeto,positivo,amor
+💪,força,positivo,confiança
+🎈,Comemoração,positivo,felicidade
+👏🏽,Aplausos,positivo,felicidade
+💅🏻,confiança,positivo,confiança
+👏🏿,Aplausos,positivo,felicidade
+👏,Aplausos,positivo,felicidade
+🍀,fortuna,positivo,esperança
+👁,observar,neutro,neutro
+🌾,colheitas,positivo,felicidade
+🙌🏼,Aplausos,positivo,felicidade
+✌️,paz,positivo,tranquilidade
+👏🏾,Aplausos,positivo,felicidade
+✈️,voos,neutro,neutro
+📱,comunicação,neutro,neutro
+🤤,Fome intensa,negativo,desespero
+🏊,nadando contra a maré,neutro,neutro
+😎,sucesso,positivo,confiança
+💪🏾,força,positivo,confiança
+4️⃣,teclado,neutro,neutro
+🙏🏽,Pelo amor de Deus,negativo,desespero
+🍻,brinde celebratório,positivo,felicidade
+🇺🇸,país,neutro,neutro
+🙏🏻,Pelo amor de Deus,negativo,desespero
+💲,riqueza,positivo,confiança
+🤔,dúvida,negativo,confusão
+🇺🇲,Ilhas Virgens,neutro,neutro
+🌻,vitalidade,positivo,felicidade
+😖,angústia,negativo,angústia
+🚕,táxi,neutro,neutro
+🌼,frescor da primavera,positivo,felicidade
+🙌🏻,Aplausos,positivo,felicidade
+🌷,resiliente,positivo,esperança
+💚,amor pela natureza,positivo,amor
+👋,Saudação,positivo,felicidade
+🌍,Terra,neutro,neutro
+😄,Felicidade,positivo,felicidade
+🙏🏾,oração,positivo,esperança
+⛵,Hobby,positivo,felicidade
+🛩,aviação,neutro,neutro
+🐲,fantasia,positivo,felicidade
+☕,Café da manhã,positivo,felicidade
+🧈,Manteiga,neutro,neutro
+✌,Tranquilidade,positivo,tranquilidade
+😌,Paz,positivo,tranquilidade
+✨,Maravilhoso,positivo,felicidade
+💙,Confiança,positivo,confiança
+😆,Diversão,positivo,felicidade
+♨,Fontes quentes,positivo,felicidade
+💥,Uma surpresa avassaladora,positivo,surpresa
+🤗,Gratidão,positivo,gratidão
