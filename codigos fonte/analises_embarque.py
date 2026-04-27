@@ -431,21 +431,33 @@ plt.show()
 
 
 # Extração de Emojis Únicos
+# somente colunas de comentarios
+
+
 
 import nltk
 import spacy
 import pandas as pd
 import matplotlib.pyplot as plt
+import emoji
+
+# Certifique-se de ter as bibliotecas instaladas:
+# !pip install emoji spacy nltk
 
 nltk.download('stopwords')
 nlp = spacy.load("pt_core_news_sm")
-
 
 # =========================
 # IMPORTAÇÃO DOS DADOS
 # =========================
 df_embarque = pd.read_excel('comments_embarque.xlsx')
 
+# REMOVENDO AS COLUNAS SOLICITADAS
+# Utilizamos errors='ignore' para evitar erros caso alguma coluna já não exista
+colunas_para_remover = ['ID do usuário', 'Nome de usuário', 'Página inicial do usuário', 'URL do avatar']
+df_embarque = df_embarque.drop(columns=colunas_para_remover, errors='ignore')
+
+# Criando o banco apenas com a coluna de comentários para o processamento
 novo_banco = df_embarque[['Comente']].copy()
 novo_banco.columns = ['comentario']
 
@@ -453,90 +465,52 @@ novo_banco.columns = ['comentario']
 # =========================
 # PRÉ-PROCESSAMENTO
 # =========================
+# OBS: Certifique-se de que a função 'limpar_comentarios' está definida no seu script
 novo_banco['comentario_limpo'] = novo_banco['comentario'].apply(limpar_comentarios)
 
-# verificar quantidade antes e depois
 print("Total de comentários antes da limpeza:", len(novo_banco))
-
 novo_banco = novo_banco.dropna(subset=['comentario_limpo'])
-
 print("Total de comentários após limpeza:", len(novo_banco))
 
 
 # =========================
 # CLASSIFICAÇÃO DE SENTIMENTO
 # =========================
-# OBS: pipeline já deve estar treinado anteriormente com fit()
-
-novo_banco['Sentimento'] = pipeline.predict(
-    novo_banco['comentario_limpo']
-)
+# OBS: O objeto 'pipeline' deve estar definido/treinado anteriormente
+novo_banco['Sentimento'] = pipeline.predict(novo_banco['comentario_limpo'])
 
 
 # =========================
-# VISUALIZAÇÃO INICIAL
+# VISUALIZAÇÃO
 # =========================
-print("\nAmostra dos dados classificados:\n")
-print(novo_banco[['comentario', 'Sentimento']].head(20))
-
 print("\nDistribuição dos sentimentos:\n")
 print(novo_banco['Sentimento'].value_counts())
 
-
-# =========================
-# GRÁFICO DE BARRAS (PRINCIPAL)
-# =========================
+# Gráfico de Barras
 ordem = ['negativo', 'neutro', 'positivo']
 polaridades = novo_banco['Sentimento'].value_counts().reindex(ordem)
 
 plt.figure(figsize=(8,5))
-polaridades.plot(kind='bar')
-
+polaridades.plot(kind='bar', color=['red', 'gray', 'green'])
 plt.title('Distribuição dos Sentimentos - Revista Embarque')
 plt.xlabel('Sentimento')
 plt.ylabel('Quantidade')
 plt.xticks(rotation=0)
 
-# adicionar valores nas barras
 for i, v in enumerate(polaridades.values):
     if pd.notnull(v):
-        plt.text(i, v + 1, str(int(v)), ha='center')
-
+        plt.text(i, v + 0.5, str(int(v)), ha='center')
 plt.show()
 
 
-
-# GRÁFICO DE PIZZA
-
-polaridades_pizza = novo_banco['Sentimento'].value_counts()
-
-plt.figure(figsize=(8,8))
-plt.pie(
-    polaridades_pizza,
-    labels=polaridades_pizza.index,
-    autopct='%1.1f%%'
-)
-
-plt.title('Distribuição das Polaridades (%)')
-plt.show()
-
-
-# Extraíndo os emojis do comentários comentários da Embarque
-# Emojis ùnicos
-# este código está ligado ao campo novo banco
-
-!pip install emoji
-
-from enum import unique
-
-import emoji
-
+# =========================
+# EXTRAÇÃO DE EMOJIS ÚNICOS
+# =========================
 somente_emojis = []
 somente_textos = []
+
 for p in novo_banco['comentario'].fillna(''):
-
     p = str(p)
-
     # extrai emojis
     lista_emojis = emoji.distinct_emoji_list(p)
     somente_emojis.append(lista_emojis)
@@ -544,27 +518,20 @@ for p in novo_banco['comentario'].fillna(''):
     # remove emojis do texto
     texto_sem_emoji = emoji.replace_emoji(p, replace='')
     somente_textos.append(texto_sem_emoji.strip())
-    #print(lista_emojis)
-    #print(texto_sem_emoji)
 
-    emojis_unicos = set()
-
+# Consolidando emojis únicos
+emojis_unicos = set()
 for lista in somente_emojis:
     emojis_unicos.update(lista)
 
+print(f"\nEmojis únicos encontrados ({len(emojis_unicos)}):")
 print(emojis_unicos)
 
-banco_emojis = pd.DataFrame(emojis_unicos, columns=['emoji'])
+banco_emojis = pd.DataFrame(list(emojis_unicos), columns=['emoji'])
 
-# Extrai os valores únicos como um array NumPy
-valores_unicos = banco_emojis['emoji'].unique()
-#print(valores_unicos)  # Saída: ['A' 'B' 'C']
-
-# Para contar quantos valores únicos existem, use nunique()
-contagem = banco_emojis['emoji'].nunique()
-#print(contagem)  # Saída: 3
-
-to_excel = banco_emojis.to_excel('emojis.xlsx', index=True)
+# Exportação
+banco_emojis.to_excel('emojis.xlsx', index=True)
+print("\nArquivo 'emojis.xlsx' gerado com sucesso.")
 
 # ANALISE EXPLORATÓRIA SOMENTE COMENTARIOS EMBARQUE
 
@@ -636,7 +603,7 @@ print("\n--- Estatísticas ---")
 print(df[['tamanho_texto', 'qtd_palavras', 'qtd_emojis']].describe())
 
 
-# TOKENIZAÇÃO (SEM NLTK - ROBUSTO)
+# TOKENIZAÇÃO
 
 tokens = []
 
